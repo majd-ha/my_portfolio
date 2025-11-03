@@ -7,14 +7,8 @@ import {
   FaImages,
 } from "react-icons/fa";
 import { IoClose } from "react-icons/io5";
-import {
-  SiLaravel,
-  SiMongodb,
-  SiMysql,
-  SiNodedotjs,
-  SiReact,
-  SiTailwindcss,
-} from "react-icons/si";
+import { SiLaravel, SiMysql, SiReact, SiTailwindcss } from "react-icons/si";
+import { TbBrandSocketIo } from "react-icons/tb";
 
 const LazyImage = ({ src, alt, className, onClick }) => {
   const [isLoaded, setIsLoaded] = useState(false);
@@ -50,100 +44,47 @@ const LazyImage = ({ src, alt, className, onClick }) => {
 const projects = [
   {
     id: 1,
-    title: "Fast Learn - Courses Platform",
+    title: "IChat - RealTime Chat App ",
     description:
-      "A comprehensive e-learning platform with multi-authentication system supporting three distinct roles: instructors who publish courses, students who enroll and complete assessments, and administrators who manage content and user permissions.",
-    thumbnail: "/images/fast-learn/student/1.png",
-    github: "https://github.com/CoderM0/fast-learn",
+      "RealTime Chat built with Laravel and React fast and fun , its under development now",
+    thumbnail: "/images/IChatImages/1.png",
+    github: "https://github.com/CoderM0/real_time_chat",
     liveDemo: "",
-    technologies: ["Laravel", "React", "Node.js", "MongoDB", "Tailwind CSS"],
-    techIcons: [SiLaravel, SiReact, SiNodedotjs, SiMongodb, SiTailwindcss],
+    technologies: ["Laravel", "React", "WebSocket", "MySql", "Tailwind CSS"],
+    techIcons: [SiLaravel, SiReact, TbBrandSocketIo, SiMysql, SiTailwindcss],
     features: [
-      "Multi-role Authentication",
-      "Course Management",
-      "Assessment System",
-      "Admin Dashboard",
+      "Real Time Chat",
+      "Online status tracker",
+      "Read Receipts",
+      "Responseve Design",
     ],
     gallerySections: [
       {
-        sectionName: "Teacher Panel",
+        sectionName: "App",
         images: [
           {
-            url: "/images/fast-learn/teacher/1.png",
-            caption: "Log In Page - Public",
+            url: "/images/IChatImages/1.png",
+            caption: "Landing Page",
           },
           {
-            url: "/images/fast-learn/teacher/2.png",
-            caption: "Dashboard",
+            url: "/images/IChatImages/2.png",
+            caption: "Registeration",
           },
           {
-            url: "/images/fast-learn/teacher/3.png",
-            caption: "My Courses",
+            url: "/images/IChatImages/3.png",
+            caption: "LogIn",
           },
           {
-            url: "/images/fast-learn/teacher/4.png",
-            caption: "Create New Course",
+            url: "/images/IChatImages/4.png",
+            caption: "Chats List",
           },
           {
-            url: "/images/fast-learn/teacher/5.png",
-            caption: "Edit Course",
+            url: "/images/IChatImages/5.png",
+            caption: "Chat between Two Contacts - both online",
           },
           {
-            url: "/images/fast-learn/teacher/6.png",
-            caption: "Edit & Add Modules & Lessons",
-          },
-          {
-            url: "/images/fast-learn/teacher/7.png",
-            caption: "Edit Personal Info",
-          },
-          {
-            url: "/images/fast-learn/teacher/8.png",
-            caption: "View Profile",
-          },
-          {
-            url: "/images/fast-learn/teacher/9.png",
-            caption: "View My Students",
-          },
-        ],
-      },
-      {
-        sectionName: "Student Portal",
-        images: [
-          {
-            url: "/images/fast-learn/student/1.png",
-            caption: "Registeration on platform",
-          },
-          {
-            url: "/images/fast-learn/student/2.png",
-            caption: "My Enrolled Courses ",
-          },
-          {
-            url: "/images/fast-learn/student/3.png",
-            caption: "Browse All Courses",
-          },
-          {
-            url: "/images/fast-learn/student/4.png",
-            caption: "Course Info",
-          },
-          {
-            url: "/images/fast-learn/student/5.png",
-            caption: "Quize Submission",
-          },
-          {
-            url: "/images/fast-learn/student/6.png",
-            caption: "Voice Lessons",
-          },
-          {
-            url: "/images/fast-learn/student/7.png",
-            caption: "Video Lessons",
-          },
-          {
-            url: "/images/fast-learn/student/8.png",
-            caption: "Edit Profile",
-          },
-          {
-            url: "/images/fast-learn/student/9.png",
-            caption: "View Profile",
+            url: "/images/IChatImages/6.png",
+            caption: "Chat between Two Contacts - the other is offline",
           },
         ],
       },
@@ -322,6 +263,107 @@ const projects = [
           {
             url: "/images/med-care-project/patient/13.png",
             caption: "Register on Platform ",
+          },
+        ],
+      },
+    ],
+  },
+  {
+    id: 3,
+    title: "Fast Learn - Courses Platform",
+    description:
+      "A comprehensive e-learning platform with multi-authentication system supporting three distinct roles: instructors who publish courses, students who enroll and complete assessments, and administrators who manage content and user permissions.",
+    thumbnail: "/images/fast-learn/student/1.png",
+    github: "https://github.com/CoderM0/fast-learn",
+    liveDemo: "",
+    technologies: ["Laravel", "React", "MySql", "Tailwind CSS"],
+    techIcons: [SiLaravel, SiReact, SiMysql, SiTailwindcss],
+    features: [
+      "Multi-role Authentication",
+      "Course Management",
+      "Assessment System",
+      "Admin Dashboard",
+    ],
+    gallerySections: [
+      {
+        sectionName: "Teacher Panel",
+        images: [
+          {
+            url: "/images/fast-learn/teacher/1.png",
+            caption: "Log In Page - Public",
+          },
+          {
+            url: "/images/fast-learn/teacher/2.png",
+            caption: "Dashboard",
+          },
+          {
+            url: "/images/fast-learn/teacher/3.png",
+            caption: "My Courses",
+          },
+          {
+            url: "/images/fast-learn/teacher/4.png",
+            caption: "Create New Course",
+          },
+          {
+            url: "/images/fast-learn/teacher/5.png",
+            caption: "Edit Course",
+          },
+          {
+            url: "/images/fast-learn/teacher/6.png",
+            caption: "Edit & Add Modules & Lessons",
+          },
+          {
+            url: "/images/fast-learn/teacher/7.png",
+            caption: "Edit Personal Info",
+          },
+          {
+            url: "/images/fast-learn/teacher/8.png",
+            caption: "View Profile",
+          },
+          {
+            url: "/images/fast-learn/teacher/9.png",
+            caption: "View My Students",
+          },
+        ],
+      },
+      {
+        sectionName: "Student Portal",
+        images: [
+          {
+            url: "/images/fast-learn/student/1.png",
+            caption: "Registeration on platform",
+          },
+          {
+            url: "/images/fast-learn/student/2.png",
+            caption: "My Enrolled Courses ",
+          },
+          {
+            url: "/images/fast-learn/student/3.png",
+            caption: "Browse All Courses",
+          },
+          {
+            url: "/images/fast-learn/student/4.png",
+            caption: "Course Info",
+          },
+          {
+            url: "/images/fast-learn/student/5.png",
+            caption: "Quize Submission",
+          },
+          {
+            url: "/images/fast-learn/student/6.png",
+            caption: "Voice Lessons",
+          },
+          {
+            url: "/images/fast-learn/student/7.png",
+            caption: "Video Lessons",
+          },
+          {
+            url: "/images/fast-learn/student/8.png",
+            caption: "Edit Profile",
+          },
+          {
+            url: "/images/fast-learn/student/9.png",
+            caption: "View Profile",
           },
         ],
       },
